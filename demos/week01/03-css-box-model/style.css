@@ -1,0 +1,35 @@
+
+* {
+    margin: 0px;
+    /* this property make it so the browser takes into account padding, and border when deciding how big an image/element must be */
+    box-sizing: border-box;
+}
+
+
+img {
+    height: 50vh;
+    width: auto;
+    border: red 20px solid;
+    padding: 50px;
+}
+
+
+p {
+    background-color: tomato;
+    color: white;
+    font-family: cursive;
+}
+
+h3 {
+    border-color: black;
+    border-width: 10px;
+    border-style:groove; 
+
+    margin: 50px;
+    padding: 10px;
+}
+
+/*  */
+
+/* cmd + / */
+/* ctrl + / */

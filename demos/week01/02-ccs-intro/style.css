@@ -1,0 +1,45 @@
+body {
+    background-color: tomato;
+}
+
+/* Targeting an element */
+
+p {
+    color: rgb(238, 208, 208);
+    font-family: monospace;
+    font-size: 32px;
+}
+
+
+/* Targeting classes in our HTML */
+
+
+.green-text {
+    color: chartreuse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.red-text {
+    color: red;
+}
+
+
+nav {
+    background-color: azure;
+    margin: 50px;
+}
+
+
+/* target only a tags that are a direct child to the a tag */
+nav > a {
+    text-decoration: none;
+}
+
+.cta-button {
+    height: 60px;
+    width: 200px;
+}
+
+.cta-button:hover {
+    background-color: hotpink;
+}

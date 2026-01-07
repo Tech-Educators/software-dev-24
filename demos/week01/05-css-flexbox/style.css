@@ -1,0 +1,25 @@
+
+.box {
+    height: 100px;
+    width: 100px;
+    border-right: black 3px solid;
+}
+
+.one {background-color: #A4243B;}
+.two {background-color: #d8c99b;}
+.three{background-color: #D8973C;}
+.four{background-color: #BD632F;}
+.five{background-color: #273E47;}
+
+
+.container {
+    display: flex;
+    height: 500px;
+
+    /* i nnow have some additional properties I can use because this has display set to 'flex' */
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+    justify-content: center;
+}

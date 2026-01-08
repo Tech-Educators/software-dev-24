@@ -1,0 +1,36 @@
+* {
+    margin: 0px;
+}
+
+
+.page-container {
+    border: 3px black solid;
+    border-radius: 25px;
+
+    height: 77vh;
+    width: 70vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.address-information {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.business-info {
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+}

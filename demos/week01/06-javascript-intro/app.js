@@ -130,3 +130,8 @@ console.log(myInformation)
 const myInfoInTemplate = `My name is Sam, and I have a pet named ${myPet} !`
 
 console.log(myInfoInTemplate)
+
+const foo = 4
+const bar = 5
+
+console.log(foo, bar)

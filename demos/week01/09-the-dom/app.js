@@ -34,3 +34,8 @@ console.log(myMarquee)
 document.body.appendChild(myMarquee)
 
 // myMarquee.remove()
+
+
+// 1. get the p tag
+const greeting = document.getElementById('greeting')
+greeting.innerText = 'Hola!'

@@ -27,3 +27,17 @@ const myHeader = document.querySelector('h1')
 myHeader.addEventListener('mouseover', function(event) {
     console.log(event)
 })
+
+
+// booleans
+true
+false 
+
+// operators -> that returns true or false
+
+5 >= 6 // false
+
+
+if (5) {
+    console.log('hello')
+}

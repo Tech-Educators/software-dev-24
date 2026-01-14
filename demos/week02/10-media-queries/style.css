@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 2px;
+}
+
+body {
+    background-color: red;
+    font-size: 10rem;
+}
+
+/* anything below 600px it should apply this */
+/* @media (max-width: 600px) {
+    body {
+        background-color: red;
+    }
+} */
+
+/* Write your css for mobile as the default */
+
+/* Media query to see if the screen is big */
+/* is the screen over 600px? AND is the screen below 900px */
+@media (min-width: 600px) and (max-width: 900px) {
+    body {
+        background-color: aqua;
+    }
+
+    p {
+        color: white;
+    }
+}
+
+
+/* em  */
+
+/* 1em = 16px */
+
+
+/* rem */
+/* relative em */
+
+/* if you change the parent font-size in the root of the document, that re-write what 1rem means */
+
+/* by default 1rem = 16px */

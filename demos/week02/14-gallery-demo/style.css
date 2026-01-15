@@ -1,0 +1,7 @@
+
+.thumbnails {
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

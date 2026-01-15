@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <!--1. Use semantic elements  -->
+
+    <!-- We can use aria-label to add extra context to an elment if needed -->
+     <a href="http://google.com" aria-label="Go to the google.com search page">Search</a>
+
+     <!-- you can give the image a 'tabindex' property so that users can select it with tab -->
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKu47DE8CKFmmaCP6b00SCOepEAVBhZ7uJhQ&s" alt="A bee on a flower" tabindex="0"/>
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKu47DE8CKFmmaCP6b00SCOepEAVBhZ7uJhQ&s" alt="A bee on a flower" tabindex="0"/>
+
+    <!-- Using aria-live tells the screenreader that an element will be updated, and we need to watch it/announce its updates -->
+     <!-- aria-live='assertive' means it will interrupt itself -->
+      <!-- aria-live='polite' means it will wait until its finished speaking before reading out the new notification -->
+     <div id="notificationArea" aria-live="assertive">No new notificaitons</div>
+
+     <button id="notificationButton">Generate notification</button>
+
+     <!-- We can tell aria /screen readers to ignore elements completely -->
+     <div aria-hidden="true">Just for decoration</div>
+</body>
+</html>

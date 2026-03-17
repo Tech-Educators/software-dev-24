@@ -2,6 +2,7 @@
 import { useActionState } from "react";
 import { handleSubmit } from "@/utils/action";
 
+// Setting up this 'initial' object to use as the starting value of state
 const initial = {
   data: {
     username: "",
@@ -27,6 +28,8 @@ export default function FormPage() {
       <p>{state.data.username}</p>
       <p>{state.data.age}</p>
       <p>{state.data.ok}</p>
+      {/* We're adding a message to our state (if certain conditions are met) in the action
+      and we can render that here */}
       {state.error.message && (
         <p className="text-red-500">{state.error.message}</p>
       )}
@@ -35,7 +38,9 @@ export default function FormPage() {
         <input name="username" />
         <label htmlFor="age">Enter your age:</label>
         <input type="number" name="age" />
+        {/* Using isPending we can disable the button if the action is ongoing */}
         <button type="submit" disabled={isPending}>
+          {/* We can use a ternary too to change the button's text depending on the value of isPending */}
           {isPending ? "Wait..." : "Submit"}
         </button>
       </form>
